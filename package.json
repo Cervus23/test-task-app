@@ -1,0 +1,22 @@
+{
+  "name": "test-task-shop",
+  "version": "1.0.0",
+  "description": "test app for an online-shop",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cervus23/test-task-app.git"
+  },
+  "author": "cervus23",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cervus23/test-task-app/issues"
+  },
+  "homepage": "https://github.com/Cervus23/test-task-app#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
