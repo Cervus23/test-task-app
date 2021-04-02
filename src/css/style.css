@@ -66,7 +66,7 @@ main {
   width: 1770px;
   justify-content: center;
   margin-top: 100px;
-
+  margin-bottom: 100px;
   margin-left: auto;
 }
 
@@ -235,4 +235,67 @@ main {
   line-height: 30pt;
   font-weight: bold;
   color: #fff;
+}
+
+footer {
+  padding-left: 400px;
+  padding-top: 100px;
+  height: 566px;
+  margin-bottom: 623px;
+  color: #fff;
+  background: url("../img/leaf-1.png") top -10px left 225px no-repeat,
+    url("../img/pizza-1.png") top -221px right -175px no-repeat, #fea100;
+}
+
+.footer-title {
+  font-size: 35pt;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.food-steps-container {
+  display: flex;
+}
+
+.food-steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step-marker-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 86px;
+  box-sizing: border-box;
+  background-color: #cc8306;
+}
+
+.step-marker {
+  margin: 6px;
+  text-align: center;
+  padding: 6px 10px;
+  line-height: 18pt;
+  width: 36px;
+  border: 4px solid #fea100;
+}
+
+.step-text {
+  margin: 0;
+  margin-left: 30px;
+  width: 880px;
+  font-size: 14pt;
+  line-height: 21pt;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
 }
