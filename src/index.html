@@ -1,39 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test shop app</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header">
-        <div class="image-container"><span class="image-text">IMAGE 930 x 572</span></div>
-        <div class="spec-section">
-            <h1 class="spec-title">Speciality</h1>
-            <div class="spec-item">
-                <h3 class="spec-item-title">EXCELLENT SERVICE</h3>
-                <p class="spec-item-text">Survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            </div>
-            <div class="spec-item">
-                <h3 class="spec-item-title">FREE HOME DELIVERY</h3>
-                <p class="spec-item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            </div>
-            <div class="spec-item">
-                <h3 class="spec-item-title">COOL ATMOSPHERE</h3>
-                <p class="spec-item-text">Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
+      <div class="image-container">
+        <span class="image-text">IMAGE 930 x 572</span>
+      </div>
+      <div class="spec-section">
+        <h1 class="spec-title">Speciality</h1>
+        <div class="spec-item">
+          <h3 class="spec-item-title">EXCELLENT SERVICE</h3>
+          <p class="spec-item-text">
+            Survived not only five centuries, but also the leap into electronic
+            typesetting, remaining essentially unchanged.
+          </p>
         </div>
+        <div class="spec-item">
+          <h3 class="spec-item-title">FREE HOME DELIVERY</h3>
+          <p class="spec-item-text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+        <div class="spec-item">
+          <h3 class="spec-item-title">COOL ATMOSPHERE</h3>
+          <p class="spec-item-text">
+            Letraset sheets containing Lorem Ipsum passages, and more recently
+            with desktop publishing software like Aldus PageMaker including
+            versions of Lorem Ipsum.
+          </p>
+        </div>
+      </div>
     </header>
     <main>
-        <div class="product-cart">
-            <h2 class="cart-title">Product Cart</h2>
-            
+      <h2 class="cart-title">Product Cart</h2>
+      <div class="product-cart">
+        <div class="product-table">
+          <div class="table-header">
+            <span class="table-head">Item</span>
+            <span class="table-head">Price</span>
+            <span class="table-head">Qty</span>
+            <span class="table-head">Subtotal</span>
+          </div>
+          <div class="item-container">
+            <div class="item-info">
+              <div class="item-image">
+                <span class="item-image-text">IMAGE 115 x 115</span
+                ><button class="delete-btn"></button>
+              </div>
+              <span class="table-text item-name">GREEN MUNG BEAS</span>
+            </div>
+            <div class="table-text table-price">$ 100</div>
+            <div class="table-text"><span class="table-qty">1</span></div>
+            <div class="table-text table-subtotal">$ 100</div>
+          </div>
+          <div class="item-container">
+            <div class="item-info">
+              <div class="item-image">
+                <span class="item-image-text">IMAGE 115 x 115</span
+                ><button class="delete-btn"></button>
+              </div>
+              <span class="table-text item-name">LAIRD GREEN LENTILS</span>
+            </div>
+            <div class="table-text table-price">$ 100</div>
+            <div class="table-text"><span class="table-qty">1</span></div>
+            <div class="table-text table-subtotal">$ 100</div>
+          </div>
+          <div class="item-container">
+            <div class="item-info">
+              <div class="item-image">
+                <span class="item-image-text">IMAGE 115 x 115</span
+                ><button class="delete-btn"></button>
+              </div>
+              <span class="table-text item-name">FAVA BEAN</span>
+            </div>
+            <div class="table-text table-price">$ 100</div>
+            <div class="table-text"><span class="table-qty">1</span></div>
+            <div class="table-text table-subtotal">$ 100</div>
+          </div>
         </div>
+        <div class="summary">
+          <div class="summary-container">
+            <h3 class="sum-title">Summary</h3>
+            <div class="sum-item">
+              <span class="sum-item-name">Subtotal</span>
+              <span class="sum-item-value">: $300</span>
+            </div>
+            <div class="sum-item">
+              <span class="sum-item-name">Shipping cost</span>
+              <span class="sum-item-value">: $0</span>
+            </div>
+            <div class="sum-item">
+              <span class="sum-item-name">Tax</span>
+              <span class="sum-item-value">: $10</span>
+            </div>
+          </div>
+          <div class="total-container">
+            <div class="total-item">
+              <span class="total-name">ORDER TOTAL</span>
+              <span class="total-value">: $310</span>
+            </div>
+            <button class="checkout-btn">GO TO CHECKOUT</button>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
