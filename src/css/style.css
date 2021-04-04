@@ -133,8 +133,9 @@ main {
   font-weight: bold;
 }
 
-.delete-btn {
+.remove-btn {
   position: absolute;
+  cursor: pointer;
   margin-left: 95px;
   margin-bottom: 95px;
   width: 32px;
@@ -158,9 +159,11 @@ main {
 }
 
 .table-qty {
-  padding: 14px 27px;
+  width: 60px;
+  height: 38px;
   text-align: center;
   border: 1px solid #e4e4e4;
+  outline: none;
 }
 
 .summary {
@@ -238,6 +241,7 @@ main {
 }
 
 footer {
+  box-sizing: border-box;
   padding-left: 400px;
   padding-top: 100px;
   height: 566px;
@@ -253,18 +257,34 @@ footer {
   margin-bottom: 26px;
 }
 
-.food-steps-container {
-  display: flex;
-}
-
 .food-steps {
   display: flex;
   flex-direction: column;
+  max-width: fit-content;
+  max-height: 338px;
+  overflow-y: scroll;
+}
+
+.food-steps::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background-color: #cc8306;
+}
+
+.food-steps::-webkit-scrollbar {
+  width: 12px;
+  border-radius: 20px;
+  background-color: #cc8306;
+}
+
+.food-steps::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: url("../img/scroll.png") no-repeat center center, #503608;
 }
 
 .step {
   display: flex;
   margin-bottom: 40px;
+  margin-right: 75px;
 }
 
 .step:last-child {
